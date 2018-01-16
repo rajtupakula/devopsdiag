@@ -1,0 +1,813 @@
+<!doctype html>
+<!--[if IE 7]>    <html lang="en" class="ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="ie ie8 lte9 lte8">      <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="ie ie9 lte9">           <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<base href="https://xebialabs.com/" />
+	
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNVD5P9');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- BASIC META -->
+	<title>DevOps Diagram Generator</title>
+	<meta name="description" content=""/>
+	<meta name="author" content="pantarsols">
+	<!-- <link rel="publisher" href="https://plus.google.com/110028296160053416168"/> -->
+	
+	<!-- Favicons
+	<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/images/apple-touch.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/images/apple-touch-72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/images/apple-touch-114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/images/apple-touch-144.png">
+	-->
+	<!-- FACEBOOK OPENGRAPH META 
+	<meta property="og:locale" name="og:locale" content="en_US" />
+	<meta property="og:type" name="og:type" content="article" />
+	<meta property="og:title" name="og:title" content="DevOps Diagram Generator" />
+	<meta property="og:description" name="og:description" content="" />
+	<meta property="og:url" name="og:url" content="https://xebialabs.com/devops-diagram-generator/" />
+	<meta property="og:site_name" name="og:site_name" content="XebiaLabs" />
+	<meta property="og:image"  name="og:image" content="/assets/files/uploads/devops-diagram-generator.jpg" />
+	<meta property="article:published_time" name="article:published_time" content="Wed Aug 10, 2016" />
+	<meta property="article:modified_time" name="article:modified_time" content="Thu Nov  9, 2017" />
+ -->
+	
+	<!-- TWITTER CARD META 
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:site" content="https://xebialabs.com/"/>
+	<meta name="twitter:domain" content="XebiaLabs"/>
+	<meta name="twitter:creator" content="@xebialabs"/>
+	<meta name="twitter:url" content="https://xebialabs.com/devops-diagram-generator/" />
+	<meta name="twitter:title" content="DevOps Diagram Generator" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="/assets/files/uploads/devops-diagram-generator.jpg" />
+ 
+ -->
+	
+	<!-- SITE VERIFICATION LINKS
+	<meta name="msvalidate.01" content="4E6EDD9AF83030B845F43681C1C6CAA9" />
+	<meta name="google-site-verification" content="P4O1Y_yRQmhykVMOp44JX4sZh1LBZ5xkfgip_HSHhJk" />
+	<meta name="alexaVerifyID" content="Mftx5R6U9duaaKfHScXtDhxlL1o" />
+ 
+ -->
+	
+	<!-- NOINDEX META IF NEEDED -->
+	
+	
+	
+	
+    <script src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/js/v2_jquery.js"></script>    
+    
+	<!-- TYPEKIT FONTS -->
+	<script async type="text/javascript" src="//use.typekit.net/lcv5hgn.js"></script>
+	<script async type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/js/search.js"></script>
+	
+	
+
+	<link rel="stylesheet" href="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/components/minifyx/cache/styles_65820b30c2.min.css" type="text/css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://xebialabs-clients-iglusjax.stackpathdns.com/resources/js/html5shiv.js"></script>
+		<script src="https://xebialabs-clients-iglusjax.stackpathdns.com/resources/js/respond.min.js"></script>
+	<![endif]-->
+		
+	 
+	
+	
+
+
+
+<!-- Piwik Analytics -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.www.xebialabs.com"]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//xebialabs.innocraft.cloud/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+	
+
+<script type="text/javascript" src="//app-abk.marketo.com/js/forms2/js/forms2.js"></script>
+<script type="text/javascript">
+(function() {
+var didInit = false;
+function initMunchkin() {
+    if(didInit === false) {
+    didInit = true;
+    Munchkin.init('404-ZJQ-295');
+    }
+}
+var s = document.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//munchkin.marketo.net/munchkin-beta.js';
+s.onreadystatechange = function() {
+if (this.readyState == 'complete' || this.readyState == 'loaded') {
+    initMunchkin();
+}
+};
+s.onload = initMunchkin;
+document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+
+
+
+        
+</head>
+
+
+
+<style>
+    
+    #dd #dd-content #dd-discrete {height:  465px !important;}
+    #dd #dd-content #dd-discrete .dd-box--discrete {height:  465px !important;}
+    #dd #dd-content #dd-discrete .dd-box--discrete .dd-box__environments {
+        right: 120px !important;
+        top: -227px !important;
+        width: 465px !important;
+    }
+    #dd #dd-content {min-height: 650px !important;}
+    #dd #dd-content #dd-linear .dd-box--linear ~ .dd-box--linear {margin-top: 80px !important;}
+    #dd #dd-content #dd-linear .dd-box--linear {top: -10px !important;}
+    #dd #dd-content #dd-linear .dd-box--linear .dd-box__tools {width: 180px !important}
+    #dd #dd-content #dd-linear .dd-box--linear .dd-box__tools .dd-box-tool {float: left !important; margin-left:6px !important; margin-top: -2px !important;}
+</style>
+
+<body>
+
+<script type="text/javascript">
+	window.tooling = [];
+</script>
+
+	
+<!-- SCRIPTS -->
+<script type="text/javascript" src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/js/gsap/TweenMax.min.js"></script>
+<script type="text/javascript" src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/js/screenshot.js"></script>
+<script type="text/javascript" src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/js/devops-diagram.js"></script>
+
+<script type="text/javascript">
+function getScreenShot(callbackFunc){
+    var content = document.querySelectorAll("dd-content")[0];
+    setTimeout(function(){screenCap();},0);
+
+    function screenCap(){
+        console.log('image file created');
+        //$('.dd-box__environments').hide();
+        $(window).scrollTo($('#dd'),200, {
+            onAfter: function() {
+                html2canvas($('#dd-content')).then(canvas => {
+                        //onrendered: function(canvas) {
+                        //var a = document.createElement('a');				        
+                        //a.href = canvas.toDataURL({format: 'image/jpeg', quality: 1});
+                        //a.download = 'devops-diagram.jpeg';
+                        var a = $("<a>").attr("href", canvas.toDataURL('image/jpeg'))
+                            .attr("download", "devops-diagram.jpeg")
+                            .appendTo("body");
+                        a[0].click();
+                        a.remove();
+                });
+                ga('send', 'event', 'devops diagram generator', 'generate screenshot', 'success');
+            }
+        });	
+    } 
+}
+
+function PrintScreen(callbqckFunc){
+    var content = document.querySelectorAll("dd-content")[0];
+    setTimeout(function(){screenPrint();},0);
+    
+    function screenPrint(){
+        console.log('image file created');
+        //$('.dd-box__environments').hide();
+        $(window).scrollTo($('#dd'),200, {
+            onAfter: function() {
+                html2canvas($('#dd-content')).then(canvas => {
+                        var printWindow = window.open('', '', '');
+                        var img = printWindow.document.createElement('img');
+                        img.src = canvas.toDataURL({format: 'image/jpeg', quality: 1});
+                        printWindow.document.body.appendChild(img);
+                        printWindow.print();
+                        $('.dd-box__environments').show();
+                });
+                ga('send', 'event', 'devops diagram generator', 'print', 'success');
+            }
+        });	
+    } 
+}
+
+</script>
+
+<header id="mini-header">
+	
+	<div class="container">
+	
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				
+				<!-- LOGO -->
+				<a href="https://xebialabs.com/">
+					<img class="pull-left" src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/media-kit/xebialabs-standard.jpg" alt="XebiaLabs" width="200">
+				</a>
+				
+				
+				
+				<!-- SHARING BUTTONS -->
+				<div class="pull-right">
+					<div class="zm-search zm-right-item">
+				    <label for="searchBox" class="fa fa-search"></label>
+					<input id="searchBox" type="text" placeholder="search" />
+				</div>
+				<div style="margin-top:6px;"><div class="addthis_sharing_toolbox" style="display:inline-block; margin-left:10px;"></div>
+</div>
+					
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</header>
+
+<section class="bg-light" style="display:block; position:relative;background-image: url('/assets/files/products/hero.png') !important; background-position: center center !important; background-size: cover !important; background-repeat: no-repeat !important; padding: 40px 0px; margin:0px auto;">
+	
+	<div id="screenshot" class="container" style="display:block; position:relative;">
+
+		<div class="row">
+			
+			<div class="col-xs-12">
+				
+				<div id="dd">
+					
+					<!-- DEVEOPS DIAGRAM TITLE -->
+					<div id="dd-title" class="row color-slate-darken-30 " style="display:block">
+			
+						<div class="col-xs-12 col-md-6 col-md-push-6">
+						
+							<video width="100%" controls autoplay style="box-shadow: 0px 0px 40px 0px rgba(0,0,0,.12);padding: 16px;background: #fff; width: 100%; margin-bottom:12px;">
+							<source src="/assets/files/uploads/diagram.mp4" type="video/mp4">
+							  Your browser does not support the video tag.
+							</video>
+
+						</div> 
+						
+						<div class="col-xs-12 col-md-6 col-md-pull-6 text-center-xs text-center-sm">
+							
+							<h1 class="f-bold f-54">DevOps Diagram Generator</h1>
+							<h3 class="m-t-10 m-b-24">Select your tools in the box below and generate a beautiful diagram of your DevOps pipeline</h3>
+							
+						</div>
+						
+					</div>
+						
+					<!-- DEVOPS DIAGRAM CONTENT -->
+					<div id="dd-content">
+						
+						<!-- XL RELEASE -->
+						<div id="xl-release" class="dd-product">
+							<a href="products/xl-release/" target="_blank"><img src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/media-kit/xl-release-white.png" /></a>
+						</div>
+						
+						<!-- XL DEPLOY -->
+						<div id="xl-deploy" class="dd-product">
+							<a href="products/xl-deploy/" target="_blank"><img src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/media-kit/xl-deploy-white.png" /></a>
+						</div>
+						
+						<!-- DISCRETE BOXES -->
+						<div id="dd-discrete" class="dd-row">
+							
+							<!-- SCM -->
+							<div class="dd-box dd-box--discrete dd-box--6475" data-id="[6475]" data-name="Source Control Management" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/source-control-management/">
+								<h3>SCM</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+							
+							<!-- BUILD -->
+							<div class="dd-box dd-box--discrete dd-box--5506" data-id="[5506]" data-name="Build" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/build/">
+								<h3>BUILD</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+			
+							<!-- REPO MGMT -->
+							<div class="dd-box dd-box--discrete dd-box--6558" data-id="[6558]" data-name="Repository Management" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/repository-management/">
+								<h3>REPO MGMT</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+		
+							<!-- CI -->
+							<div class="dd-box dd-box--discrete dd-box--5675" data-id="[5675]" data-name="Continuous Integration" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/continuous-integration/">
+								<h3>CI</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+		
+							<!-- CONFIG / PROVISION -->
+							<div class="dd-box dd-box--discrete dd-box--5665" data-id="[5665]" data-name="Configuration Mgmt / Provisioning" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/provisioning-config-management/">
+								<h3>CONFIG / PROVISION</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+		
+							<!-- DEPLOY -->
+							<div class="dd-box dd-box--discrete dd-box--5700" data-id="[5700]" data-name="Deployment" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/deployment/">
+								<h3>DEPLOY</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+							
+							<!-- ENVIRONMENTS -->
+							<div class="dd-box dd-box--discrete dd-box--5677 dd-box--5501 dd-box--6554" data-name="Cloud / IaaS / PaaS / Middleware / Containerization" data-id="[5677,5501,6554]" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/the-ultimate-guide-to-cloud-/-iaas-/-paas-platforms/,https://xebialabs.com/taxonomies/technology-type/middleware.html,https://xebialabs.com/taxonomies/technology-type/containerization.html">
+								<h3>ENVIRONMENTS</h3>
+								<div class="dd-box__tools"></div>
+								<div class="dd-box__environments">
+									<div class="dd-environment"><h4>Dev</h4></div>
+									<div class="dd-environment"><h4>Test</h4></div>
+									<div class="dd-environment"><h4>Stage</h4></div>
+									<div class="dd-environment"><h4>Prod</h4></div>
+								</div>
+							</div>
+					
+						</div>
+						
+						<!-- LINEAR BOXES -->
+						<div id="dd-linear" class="dd-row">
+							
+							<!-- RELEASE MANAGEMENT -->
+							<div class="dd-box dd-box--linear dd-box--5680" data-id="[5680]"data-name="Release Management" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/release-management/">
+								<h3>RELEASE MANAGEMENT</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+		
+							<!-- ALM -->
+							<div class="dd-box dd-box--linear dd-box--5676" data-id="[5676]" data-name="Application Lifecycle Management" data-link="https://xebialabs.com/taxonomies/technology-type/application-lifecycle-management.html">
+								<h3>ALM</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+							
+							<!-- COLLABORATION -->
+							<div class="dd-box dd-box--linear dd-box--5658 dd-box--6514" data-id="[5658,6514]" data-name="Collaboration" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/messaging-collaboration/,https://xebialabs.com/the-ultimate-devops-tool-chest/project-issue-tracking/">
+								<h3>COLLABORATION</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+							
+							<!-- TESTING -->
+							<div class="dd-box dd-box--linear dd-box--5679" data-id="[5679]" data-name="Testing" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/testing/">
+								<h3>TESTING</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+							
+							<!-- OPERATIONAL INTELL -->
+							<div class="dd-box dd-box--linear dd-box--5678 dd-box--6503 dd-box--6504" data-name="Logging / Application Performance Management / Monitoring / Business Intelligence" data-id="[5678,6503,6504]" data-link="https://xebialabs.com/the-ultimate-devops-tool-chest/business-intelligence/,https://xebialabs.com/the-ultimate-devops-tool-chest/logging/,https://xebialabs.com/the-ultimate-devops-tool-chest/application-performance-monitoring/">
+								<h3>OPERATIONAL INTEL</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+							
+							<!-- SECURITY -->
+							<div class="dd-box dd-box--linear dd-box--6502" data-id="[6502]" data-name="Security" data-link="https://xebialabs.com/team/the-ultimate-list-of-software-security-resources/">
+								<h3>SECURITY</h3>
+								<div class="dd-box__tools"></div>
+							</div>
+							
+						</div>
+						
+						<!-- COPYRIGHT -->
+						<div id="dd-copyright">
+							<p><strong>&copy; XebiaLabs DevOps Diagram Generator</strong></p>
+							<p>https://xebialabs.com/devops-diagram-generator/</p>
+						</div>
+						
+					</div>
+					
+					<!-- FAQ -->
+					<div id="dd-faq-answers" class="dd-fancybox-content">
+						
+						<h3>What is the difference between vertical and horizontal boxes?</h3>
+						<p>The primary difference is that the vertical boxes (Build, CI, Deploy, etc.) represent discreet stages in the development lifecycle while the horizontal boxes (ALM, Collaboration, Testing, etc.) represent activities that occur at varying stages or persists throughout the lifecycle.</p>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="row">
+			
+			<div class="col-xs-12">
+				
+				<!-- SEARCH BOX -->
+				<div id="dd-search-box" class="bg-slate-lighten-90 p-16 shadow">
+							
+					<div class="arrow bounce"><i class="fa fa-angle-down"></i></div>
+					
+					<ul id="dd-options" class="list-inline pull-right" style="display:none">
+						<li><a class="addthis_button"><span id="dd-share"  href="#" class="btn btn-outline-purple btn-xs">Share</span></a></li>
+						<li><a id="dd-faq" href="#dd-faq-answers" class="btn btn-outline-yellow btn-xs fancybox">FAQ</a></li>
+						<li><a id="dd-screenshot" href="javascript:onclick=getScreenShot();" class="btn btn-outline-light-blue btn-xs locked">Download</a></li>
+						<li><a id="dd-print" href="javascript:onclick=PrintScreen();"  class="btn btn-outline-light-blue btn-xs locked">Print</a></li>
+						<li><a id="dd-hide-xl"  href="#" class="btn btn-outline-light-blue btn-xs locked tooltipit" title="Hide XebiaLabs Products">Hide XL</a></li>
+						<li><a id="dd-clear-all" href="#" class="btn btn-outline-light-blue btn-xs">Clear All</a></li>
+					</ul>
+					
+					
+					<form id="dd-form" action="https://xebialabs.com/devops-diagram-generator/" method="get">
+						
+						<label for="search">What tools do you currently use?</label>
+						
+						<select id="dd-search" class="chosen" data-placeholder="Slack, Github, Jira, Jenkins, Puppet, Amazon, etc." multiple="multiple">
+							<optgroup label="Source Control Management" id="6475"><option value="6798" data-category="6475">Bitbucket Server</option><option value="6868" data-category="6475">Rational Clearcase</option><option value="6871" data-category="6475">Rational Team Concert</option><option value="96900709" data-category="6475">ISPW</option><option value="6343" data-category="6475">GitLab</option><option value="6476" data-category="6475">Git</option><option value="6477" data-category="6475">Subversion</option><option value="6478" data-category="6475">Mercurial</option><option value="6479" data-category="6475">Helix</option><option value="6480" data-category="6475">Bitbucket</option><option value="6481" data-category="6475">Github</option><option value="6482" data-category="6475">Crucible</option><option value="6483" data-category="6475">Fisheye</option><option value="6572" data-category="6475">Gerrit</option><option value="6991" data-category="6475">Team Foundation Server</option><option value="7001" data-category="6475">Kallithea</option><option value="7002" data-category="6475">Trac</option><option value="96900885" data-category="6475">Deveo</option></optgroup><optgroup label="Build" id="5506"><option value="5380" data-category="5506">Meister</option><option value="5381" data-category="5506">Visual Build</option><option value="5382" data-category="5506">Travis CI</option><option value="5384" data-category="5506">TeamCity</option><option value="5388" data-category="5506">Rake</option><option value="5389" data-category="5506">QuickBuild</option><option value="5390" data-category="5506">Jam</option><option value="5392" data-category="5506">NAnt</option><option value="5393" data-category="5506">MSBuild</option><option value="5394" data-category="5506">Maven</option><option value="5395" data-category="5506">Make</option><option value="5396" data-category="5506">LuntBuild</option><option value="5400" data-category="5506">Hudson</option><option value="5401" data-category="5506">Gradle</option><option value="5407" data-category="5506">CruiseControl</option><option value="5409" data-category="5506">Continuum</option><option value="5411" data-category="5506">Codeship</option><option value="5413" data-category="5506">Buildr</option><option value="5414" data-category="5506">BuildMaster</option><option value="6714" data-category="5506">SSH</option><option value="6432" data-category="5506">ANT</option><option value="6440" data-category="5506">FinalBuilder</option><option value="6442" data-category="5506">CircleCI</option><option value="6464" data-category="5506">UrbanCode Build</option><option value="6465" data-category="5506">Visual Studio</option><option value="6762" data-category="5506">Broccoli</option><option value="6763" data-category="5506">sbt</option><option value="6761" data-category="5506">Grunt</option><option value="6760" data-category="5506">Gulp</option><option value="6694" data-category="5506">Packer</option><option value="7139" data-category="5506">CMake</option><option value="96900833" data-category="5506">Buildbot</option></optgroup><optgroup label="Continuous Integration" id="5675"><option value="5382" data-category="5675">Travis CI</option><option value="5384" data-category="5675">TeamCity</option><option value="5385" data-category="5675">Snap CI</option><option value="5386" data-category="5675">Shippable</option><option value="5389" data-category="5675">QuickBuild</option><option value="5398" data-category="5675">Jenkins</option><option value="5400" data-category="5675">Hudson</option><option value="5407" data-category="5675">CruiseControl</option><option value="5409" data-category="5675">Continuum</option><option value="5410" data-category="5675">Continua CI</option><option value="5411" data-category="5675">Codeship</option><option value="5414" data-category="5675">BuildMaster</option><option value="5416" data-category="5675">Bamboo</option><option value="6713" data-category="5675">Gump</option><option value="7017" data-category="5675">Solano CI</option><option value="6442" data-category="5675">CircleCI</option><option value="6464" data-category="5675">UrbanCode Build</option><option value="6465" data-category="5675">Visual Studio</option><option value="6991" data-category="5675">Team Foundation Server</option><option value="96900833" data-category="5675">Buildbot</option></optgroup><optgroup label="Repository Management" id="6558"><option value="96900798" data-category="6558">Pulp</option><option value="6859" data-category="6558">MyGet</option><option value="6484" data-category="6558">Archiva</option><option value="6568" data-category="6558">Nexus</option><option value="6569" data-category="6558">Artifactory</option><option value="6571" data-category="6558">NuGet</option><option value="96900760" data-category="6558">Docker Hub</option></optgroup><optgroup label="Testing" id="5679"><option value="6810" data-category="5679">Tricentis Tosca</option><option value="6904" data-category="5679">Mocha</option><option value="6873" data-category="5679">Parasoft Service Virtualization</option><option value="6874" data-category="5679">Parasoft API Test</option><option value="6875" data-category="5679">Parasoft Environment Manager</option><option value="6876" data-category="5679">Parasoft Development Testing Platform</option><option value="6465" data-category="5679">Visual Studio</option><option value="6468" data-category="5679">Gatling</option><option value="6469" data-category="5679">Selenium</option><option value="6470" data-category="5679">FitNesse</option><option value="6471" data-category="5679">Cucumber</option><option value="6472" data-category="5679">JUnit</option><option value="6473" data-category="5679">JMeter</option><option value="6474" data-category="5679">Appium</option><option value="6590" data-category="5679">Cucumber.js</option><option value="6591" data-category="5679">TestNG</option><option value="6703" data-category="5679">Qunit</option><option value="6749" data-category="5679">HP UFT</option><option value="6758" data-category="5679">Protractor</option><option value="6759" data-category="5679">Karma</option><option value="6685" data-category="5679">TestComplete</option><option value="7020" data-category="5679">Bosun</option><option value="7147" data-category="5679">Codacy</option><option value="7141" data-category="5679">Rational Quality Manager</option><option value="7223" data-category="5679">SpecFlow</option><option value="96900050" data-category="5679">SonarQube</option><option value="96900754" data-category="5679">Gauntlt</option><option value="96900568" data-category="5679">Jasmine</option><option value="96900658" data-category="5679">Locust</option><option value="96900756" data-category="5679">Sahi</option><option value="96900812" data-category="5679">pytest</option></optgroup><optgroup label="Deployment" id="5700"><option value="96900759" data-category="5700">Deploybot</option><option value="5364" data-category="5700">ElasticBox</option><option value="5402" data-category="5700">Go</option><option value="5404" data-category="5700">ElectricFlow</option><option value="5411" data-category="5700">Codeship</option><option value="5412" data-category="5700">Capistrano</option><option value="5414" data-category="5700">BuildMaster</option><option value="6708" data-category="5700">JuJu</option><option value="6709" data-category="5700">Rundeck</option><option value="6710" data-category="5700">SmartFrog</option><option value="6711" data-category="5700">Deployment Manager</option><option value="6695" data-category="5700">RapidDeploy</option><option value="6463" data-category="5700">UrbanCode Deploy</option><option value="6586" data-category="5700">Automic</option><option value="6549" data-category="5700">XL Deploy</option><option value="6553" data-category="5700">CA Nolio</option><option value="6582" data-category="5700">Octopus Deploy</option><option value="6567" data-category="5700">CodeDeploy</option><option value="96900774" data-category="5700">Nomad</option><option value="96900775" data-category="5700">Otto</option><option value="96900816" data-category="5700">Containership</option><option value="96900833" data-category="5700">Buildbot</option><option value="96902698" data-category="5700">Rancher</option></optgroup><optgroup label="Provisioning / Config Management" id="5665"><option value="5363" data-category="5665">BladeLogic</option><option value="5366" data-category="5665">Terraform</option><option value="5367" data-category="5665">Vagrant</option><option value="5373" data-category="5665">Ansible</option><option value="5375" data-category="5665">CFEngine</option><option value="5377" data-category="5665">Salt</option><option value="5378" data-category="5665">Chef</option><option value="5379" data-category="5665">Puppet</option><option value="6852" data-category="5665">Rudder</option><option value="6709" data-category="5665">Rundeck</option><option value="6710" data-category="5665">SmartFrog</option><option value="6714" data-category="5665">SSH</option><option value="6856" data-category="5665">Foreman</option><option value="6315" data-category="5665">ServiceNow</option><option value="6448" data-category="5665">Cobbler</option><option value="6450" data-category="5665">Bcfg2</option><option value="6549" data-category="5665">XL Deploy</option><option value="6694" data-category="5665">Packer</option><option value="96900773" data-category="5665">Consul</option><option value="96900817" data-category="5665">PalletOps</option></optgroup><optgroup label="Cloud / IaaS / PaaS" id="5677"><option value="5338" data-category="5677">OpenStack</option><option value="5341" data-category="5677">Apprenda</option><option value="5343" data-category="5677">Cloud Foundry</option><option value="5344" data-category="5677">OpenShift</option><option value="5345" data-category="5677">Amazon Web Services</option><option value="5346" data-category="5677">Azure</option><option value="5347" data-category="5677">Bluemix</option><option value="6804" data-category="5677">Deis</option><option value="6764" data-category="5677">vCloud Air</option><option value="6509" data-category="5677">Helion</option><option value="6513" data-category="5677">Heroku</option><option value="6689" data-category="5677">Rackspace</option><option value="6757" data-category="5677">Triton</option><option value="6698" data-category="5677">Jelastic</option><option value="6988" data-category="5677">Digital Ocean</option><option value="7120" data-category="5677">Skytap</option><option value="96900719" data-category="5677">Google Cloud Platform</option><option value="96900816" data-category="5677">Containership</option></optgroup><optgroup label="Release Management" id="5680"><option value="5404" data-category="5680">ElectricFlow</option><option value="6853" data-category="5680">CA Release Automation</option><option value="6451" data-category="5680">Excel</option><option value="6455" data-category="5680">Serena Release</option><option value="6457" data-category="5680">Plutora Release</option><option value="6458" data-category="5680">BMC Release Process Management</option><option value="6460" data-category="5680">CA Service Virtualization (LISA)</option><option value="6462" data-category="5680">UrbanCode Release</option><option value="6586" data-category="5680">Automic</option><option value="6547" data-category="5680">XL Release</option><option value="6582" data-category="5680">Octopus Deploy</option><option value="6769" data-category="5680">StackStorm</option><option value="96900849" data-category="5680">LaunchDarkly</option></optgroup><optgroup label="Messaging / Collaboration" id="6514"><option value="6311" data-category="6514">Jira</option><option value="6315" data-category="6514">ServiceNow</option><option value="6345" data-category="6514">HipChat</option><option value="6555" data-category="6514">Trello</option><option value="6516" data-category="6514">Pivotal Tracker</option><option value="6517" data-category="6514">Slack</option><option value="6518" data-category="6514">Flowdock</option><option value="6769" data-category="6514">StackStorm</option><option value="6991" data-category="6514">Team Foundation Server</option><option value="96900871" data-category="6514">Wrike</option><option value="96900885" data-category="6514">Deveo</option><option value="96902727" data-category="6514">Rally</option></optgroup><optgroup label="Operational Intelligence" id="5678"><option value="96900777" data-category="5678">StackState</option><option value="96900861" data-category="5678">Sensu</option><option value="6705" data-category="5678">Cacti</option><option value="6706" data-category="5678">Graphite</option><option value="6707" data-category="5678">Icinga</option><option value="6734" data-category="5678">AppDynamics</option><option value="6883" data-category="5678">Zabbix</option><option value="6909" data-category="5678">SPM</option><option value="6839" data-category="5678">Datadog</option><option value="6699" data-category="5678">New Relic</option><option value="6700" data-category="5678">Nagios</option><option value="6702" data-category="5678">Ganglia</option><option value="6559" data-category="5678">Splunk</option><option value="6556" data-category="5678">Kibana</option><option value="6557" data-category="5678">Elasticsearch</option><option value="6561" data-category="5678">Tableau</option><option value="6752" data-category="5678">Grafana</option><option value="6756" data-category="5678">Riemann</option><option value="96900780" data-category="5678">jKool</option><option value="7020" data-category="5678">Bosun</option><option value="96900895" data-category="5678">Sentry</option><option value="96900908" data-category="5678">CloudMunch</option><option value="96900818" data-category="5678">Dynatrace</option></optgroup><optgroup label="Middleware" id="5501"><option value="5339" data-category="5501">IIS</option><option value="5349" data-category="5501">Glassfish</option><option value="5352" data-category="5501">Tomcat</option><option value="5353" data-category="5501">WebLogic</option><option value="5354" data-category="5501">JBoss</option><option value="5357" data-category="5501">WebSphere Application Server</option><option value="6486" data-category="5501">Geronimo</option><option value="6869" data-category="5501">JBoss Data Virtualization</option><option value="6485" data-category="5501">WildFly</option><option value="6573" data-category="5501">Jetty</option></optgroup><optgroup label="Project and Issue Tracking" id="5658"><option value="6886" data-category="5658">Mantis Bug Tracker</option><option value="6311" data-category="5658">Jira</option><option value="6315" data-category="5658">ServiceNow</option><option value="6555" data-category="5658">Trello</option><option value="6933" data-category="5658">Redmine</option><option value="6516" data-category="5658">Pivotal Tracker</option><option value="6769" data-category="5658">StackStorm</option><option value="7002" data-category="5658">Trac</option><option value="96900871" data-category="5658">Wrike</option><option value="96902727" data-category="5658">Rally</option></optgroup><optgroup label="Application Lifecycle Management" id="5676"><option value="6924" data-category="5676">Rational Team Concert</option><option value="6692" data-category="5676">HP ALM</option><option value="6978" data-category="5676">Rational Doors Next Generation (DNG)</option><option value="6990" data-category="5676">Ruxit</option><option value="6991" data-category="5676">Team Foundation Server</option><option value="96900908" data-category="5676">CloudMunch</option><option value="96900825" data-category="5676">OneOps</option><option value="96902727" data-category="5676">Rally</option></optgroup><optgroup label="Security" id="6502"><option value="96900575" data-category="6502">SecureAssist</option><option value="96900576" data-category="6502">Veracode</option><option value="6536" data-category="6502">CyberArk</option><option value="6579" data-category="6502">Snort</option><option value="6580" data-category="6502">Tripwire</option><option value="6755" data-category="6502">Fortify</option><option value="96900776" data-category="6502">Vault</option><option value="96900754" data-category="6502">Gauntlt</option></optgroup><optgroup label="Logging" id="6503"><option value="96900861" data-category="6503">Sensu</option><option value="6712" data-category="6503">Graylog</option><option value="6926" data-category="6503">Papertrail</option><option value="6910" data-category="6503">Logsene</option><option value="6863" data-category="6503">Logentries</option><option value="6528" data-category="6503">Loggly</option><option value="6701" data-category="6503">Sumo Logic</option><option value="6559" data-category="6503">Splunk</option><option value="6560" data-category="6503">Logstash</option><option value="7018" data-category="6503">vRealize Log Insight</option><option value="7220" data-category="6503">Stackify</option><option value="96900895" data-category="6503">Sentry</option></optgroup><optgroup label="Application Performance Management" id="6504"><option value="6910" data-category="6504">Logsene</option><option value="6909" data-category="6504">SPM</option><option value="6699" data-category="6504">New Relic</option><option value="7220" data-category="6504">Stackify</option><option value="96900818" data-category="6504">Dynatrace</option></optgroup><optgroup label="Containerization" id="6554"><option value="5348" data-category="6554">Docker</option><option value="96900752" data-category="6554">Solaris Containers</option><option value="6836" data-category="6554">CloudSlang</option><option value="6733" data-category="6554">Mesos</option><option value="6696" data-category="6554">Linux Containers</option><option value="6574" data-category="6554">Kubernetes</option><option value="6577" data-category="6554">rkt</option><option value="6694" data-category="6554">Packer</option><option value="96900766" data-category="6554">Swarm</option><option value="96900769" data-category="6554">Fleet</option><option value="96900771" data-category="6554">Marathon</option><option value="96900772" data-category="6554">OpenVZ</option><option value="96900774" data-category="6554">Nomad</option><option value="96900016" data-category="6554">Tectonic</option><option value="96900816" data-category="6554">Containership</option><option value="96902698" data-category="6554">Rancher</option></optgroup><optgroup label="Database Lifecycle Management" id="96900660"><option value="7138" data-category="96900660">DBmaestro</option><option value="96900659" data-category="96900660">Redgate</option><option value="96900661" data-category="96900660">Liquibase</option><option value="96900717" data-category="96900660">Delphix</option><option value="96900718" data-category="96900660">Idera</option><option value="96900839" data-category="96900660">Flyway</option><option value="96903369" data-category="96900660">Datical</option></optgroup>
+						</select>
+						
+						<select class="hidden hidden-select" id="tooling-6475" multiple="multiple" name="t[6475][]"><option value="6798">Bitbucket Server</option><option value="6868">Rational Clearcase</option><option value="6871">Rational Team Concert</option><option value="96900709">ISPW</option><option value="6343">GitLab</option><option value="6476">Git</option><option value="6477">Subversion</option><option value="6478">Mercurial</option><option value="6479">Helix</option><option value="6480">Bitbucket</option><option value="6481">Github</option><option value="6482">Crucible</option><option value="6483">Fisheye</option><option value="6572">Gerrit</option><option value="6991">Team Foundation Server</option><option value="7001">Kallithea</option><option value="7002">Trac</option><option value="96900885">Deveo</option></select><select class="hidden hidden-select" id="tooling-5506" multiple="multiple" name="t[5506][]"><option value="5380">Meister</option><option value="5381">Visual Build</option><option value="5382">Travis CI</option><option value="5384">TeamCity</option><option value="5388">Rake</option><option value="5389">QuickBuild</option><option value="5390">Jam</option><option value="5392">NAnt</option><option value="5393">MSBuild</option><option value="5394">Maven</option><option value="5395">Make</option><option value="5396">LuntBuild</option><option value="5400">Hudson</option><option value="5401">Gradle</option><option value="5407">CruiseControl</option><option value="5409">Continuum</option><option value="5411">Codeship</option><option value="5413">Buildr</option><option value="5414">BuildMaster</option><option value="6714">SSH</option><option value="6432">ANT</option><option value="6440">FinalBuilder</option><option value="6442">CircleCI</option><option value="6464">UrbanCode Build</option><option value="6465">Visual Studio</option><option value="6762">Broccoli</option><option value="6763">sbt</option><option value="6761">Grunt</option><option value="6760">Gulp</option><option value="6694">Packer</option><option value="7139">CMake</option><option value="96900833">Buildbot</option></select><select class="hidden hidden-select" id="tooling-5675" multiple="multiple" name="t[5675][]"><option value="5382">Travis CI</option><option value="5384">TeamCity</option><option value="5385">Snap CI</option><option value="5386">Shippable</option><option value="5389">QuickBuild</option><option value="5398">Jenkins</option><option value="5400">Hudson</option><option value="5407">CruiseControl</option><option value="5409">Continuum</option><option value="5410">Continua CI</option><option value="5411">Codeship</option><option value="5414">BuildMaster</option><option value="5416">Bamboo</option><option value="6713">Gump</option><option value="7017">Solano CI</option><option value="6442">CircleCI</option><option value="6464">UrbanCode Build</option><option value="6465">Visual Studio</option><option value="6991">Team Foundation Server</option><option value="96900833">Buildbot</option></select><select class="hidden hidden-select" id="tooling-6558" multiple="multiple" name="t[6558][]"><option value="96900798">Pulp</option><option value="6859">MyGet</option><option value="6484">Archiva</option><option value="6568">Nexus</option><option value="6569">Artifactory</option><option value="6571">NuGet</option><option value="96900760">Docker Hub</option></select><select class="hidden hidden-select" id="tooling-5679" multiple="multiple" name="t[5679][]"><option value="6810">Tricentis Tosca</option><option value="6904">Mocha</option><option value="6873">Parasoft Service Virtualization</option><option value="6874">Parasoft API Test</option><option value="6875">Parasoft Environment Manager</option><option value="6876">Parasoft Development Testing Platform</option><option value="6465">Visual Studio</option><option value="6468">Gatling</option><option value="6469">Selenium</option><option value="6470">FitNesse</option><option value="6471">Cucumber</option><option value="6472">JUnit</option><option value="6473">JMeter</option><option value="6474">Appium</option><option value="6590">Cucumber.js</option><option value="6591">TestNG</option><option value="6703">Qunit</option><option value="6749">HP UFT</option><option value="6758">Protractor</option><option value="6759">Karma</option><option value="6685">TestComplete</option><option value="7020">Bosun</option><option value="7147">Codacy</option><option value="7141">Rational Quality Manager</option><option value="7223">SpecFlow</option><option value="96900050">SonarQube</option><option value="96900754">Gauntlt</option><option value="96900568">Jasmine</option><option value="96900658">Locust</option><option value="96900756">Sahi</option><option value="96900812">pytest</option></select><select class="hidden hidden-select" id="tooling-5700" multiple="multiple" name="t[5700][]"><option value="96900759">Deploybot</option><option value="5364">ElasticBox</option><option value="5402">Go</option><option value="5404">ElectricFlow</option><option value="5411">Codeship</option><option value="5412">Capistrano</option><option value="5414">BuildMaster</option><option value="6708">JuJu</option><option value="6709">Rundeck</option><option value="6710">SmartFrog</option><option value="6711">Deployment Manager</option><option value="6695">RapidDeploy</option><option value="6463">UrbanCode Deploy</option><option value="6586">Automic</option><option value="6549">XL Deploy</option><option value="6553">CA Nolio</option><option value="6582">Octopus Deploy</option><option value="6567">CodeDeploy</option><option value="96900774">Nomad</option><option value="96900775">Otto</option><option value="96900816">Containership</option><option value="96900833">Buildbot</option><option value="96902698">Rancher</option></select><select class="hidden hidden-select" id="tooling-5665" multiple="multiple" name="t[5665][]"><option value="5363">BladeLogic</option><option value="5366">Terraform</option><option value="5367">Vagrant</option><option value="5373">Ansible</option><option value="5375">CFEngine</option><option value="5377">Salt</option><option value="5378">Chef</option><option value="5379">Puppet</option><option value="6852">Rudder</option><option value="6709">Rundeck</option><option value="6710">SmartFrog</option><option value="6714">SSH</option><option value="6856">Foreman</option><option value="6315">ServiceNow</option><option value="6448">Cobbler</option><option value="6450">Bcfg2</option><option value="6549">XL Deploy</option><option value="6694">Packer</option><option value="96900773">Consul</option><option value="96900817">PalletOps</option></select><select class="hidden hidden-select" id="tooling-5677" multiple="multiple" name="t[5677][]"><option value="5338">OpenStack</option><option value="5341">Apprenda</option><option value="5343">Cloud Foundry</option><option value="5344">OpenShift</option><option value="5345">Amazon Web Services</option><option value="5346">Azure</option><option value="5347">Bluemix</option><option value="6804">Deis</option><option value="6764">vCloud Air</option><option value="6509">Helion</option><option value="6513">Heroku</option><option value="6689">Rackspace</option><option value="6757">Triton</option><option value="6698">Jelastic</option><option value="6988">Digital Ocean</option><option value="7120">Skytap</option><option value="96900719">Google Cloud Platform</option><option value="96900816">Containership</option></select><select class="hidden hidden-select" id="tooling-5680" multiple="multiple" name="t[5680][]"><option value="5404">ElectricFlow</option><option value="6853">CA Release Automation</option><option value="6451">Excel</option><option value="6455">Serena Release</option><option value="6457">Plutora Release</option><option value="6458">BMC Release Process Management</option><option value="6460">CA Service Virtualization (LISA)</option><option value="6462">UrbanCode Release</option><option value="6586">Automic</option><option value="6547">XL Release</option><option value="6582">Octopus Deploy</option><option value="6769">StackStorm</option><option value="96900849">LaunchDarkly</option></select><select class="hidden hidden-select" id="tooling-6514" multiple="multiple" name="t[6514][]"><option value="6311">Jira</option><option value="6315">ServiceNow</option><option value="6345">HipChat</option><option value="6555">Trello</option><option value="6516">Pivotal Tracker</option><option value="6517">Slack</option><option value="6518">Flowdock</option><option value="6769">StackStorm</option><option value="6991">Team Foundation Server</option><option value="96900871">Wrike</option><option value="96900885">Deveo</option><option value="96902727">Rally</option></select><select class="hidden hidden-select" id="tooling-5678" multiple="multiple" name="t[5678][]"><option value="96900777">StackState</option><option value="96900861">Sensu</option><option value="6705">Cacti</option><option value="6706">Graphite</option><option value="6707">Icinga</option><option value="6734">AppDynamics</option><option value="6883">Zabbix</option><option value="6909">SPM</option><option value="6839">Datadog</option><option value="6699">New Relic</option><option value="6700">Nagios</option><option value="6702">Ganglia</option><option value="6559">Splunk</option><option value="6556">Kibana</option><option value="6557">Elasticsearch</option><option value="6561">Tableau</option><option value="6752">Grafana</option><option value="6756">Riemann</option><option value="96900780">jKool</option><option value="7020">Bosun</option><option value="96900895">Sentry</option><option value="96900908">CloudMunch</option><option value="96900818">Dynatrace</option></select><select class="hidden hidden-select" id="tooling-5501" multiple="multiple" name="t[5501][]"><option value="5339">IIS</option><option value="5349">Glassfish</option><option value="5352">Tomcat</option><option value="5353">WebLogic</option><option value="5354">JBoss</option><option value="5357">WebSphere Application Server</option><option value="6486">Geronimo</option><option value="6869">JBoss Data Virtualization</option><option value="6485">WildFly</option><option value="6573">Jetty</option></select><select class="hidden hidden-select" id="tooling-5658" multiple="multiple" name="t[5658][]"><option value="6886">Mantis Bug Tracker</option><option value="6311">Jira</option><option value="6315">ServiceNow</option><option value="6555">Trello</option><option value="6933">Redmine</option><option value="6516">Pivotal Tracker</option><option value="6769">StackStorm</option><option value="7002">Trac</option><option value="96900871">Wrike</option><option value="96902727">Rally</option></select><select class="hidden hidden-select" id="tooling-5676" multiple="multiple" name="t[5676][]"><option value="6924">Rational Team Concert</option><option value="6692">HP ALM</option><option value="6978">Rational Doors Next Generation (DNG)</option><option value="6990">Ruxit</option><option value="6991">Team Foundation Server</option><option value="96900908">CloudMunch</option><option value="96900825">OneOps</option><option value="96902727">Rally</option></select><select class="hidden hidden-select" id="tooling-6502" multiple="multiple" name="t[6502][]"><option value="96900575">SecureAssist</option><option value="96900576">Veracode</option><option value="6536">CyberArk</option><option value="6579">Snort</option><option value="6580">Tripwire</option><option value="6755">Fortify</option><option value="96900776">Vault</option><option value="96900754">Gauntlt</option></select><select class="hidden hidden-select" id="tooling-6503" multiple="multiple" name="t[6503][]"><option value="96900861">Sensu</option><option value="6712">Graylog</option><option value="6926">Papertrail</option><option value="6910">Logsene</option><option value="6863">Logentries</option><option value="6528">Loggly</option><option value="6701">Sumo Logic</option><option value="6559">Splunk</option><option value="6560">Logstash</option><option value="7018">vRealize Log Insight</option><option value="7220">Stackify</option><option value="96900895">Sentry</option></select><select class="hidden hidden-select" id="tooling-6504" multiple="multiple" name="t[6504][]"><option value="6910">Logsene</option><option value="6909">SPM</option><option value="6699">New Relic</option><option value="7220">Stackify</option><option value="96900818">Dynatrace</option></select><select class="hidden hidden-select" id="tooling-6554" multiple="multiple" name="t[6554][]"><option value="5348">Docker</option><option value="96900752">Solaris Containers</option><option value="6836">CloudSlang</option><option value="6733">Mesos</option><option value="6696">Linux Containers</option><option value="6574">Kubernetes</option><option value="6577">rkt</option><option value="6694">Packer</option><option value="96900766">Swarm</option><option value="96900769">Fleet</option><option value="96900771">Marathon</option><option value="96900772">OpenVZ</option><option value="96900774">Nomad</option><option value="96900016">Tectonic</option><option value="96900816">Containership</option><option value="96902698">Rancher</option></select><select class="hidden hidden-select" id="tooling-96900660" multiple="multiple" name="t[96900660][]"><option value="7138">DBmaestro</option><option value="96900659">Redgate</option><option value="96900661">Liquibase</option><option value="96900717">Delphix</option><option value="96900718">Idera</option><option value="96900839">Flyway</option><option value="96903369">Datical</option></select>
+						
+						<input type="hidden" name="version" value="2">
+						
+						<button id="dd-form-submit" type="submit" class="btn btn-light-blue btn-lg btn-group-justified">Visualize My Pipeline!</button>
+						
+					</form>
+					<div id="message-554">
+	
+	
+  
+	
+  	
+</div>
+
+<form id="mktoForm_554" data-styles='{"buttonClasses":"btn btn-lg btn-light-blue","buttonAlignment":"full-width"}'></form>
+
+
+					
+					
+					
+				
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+<section class="container-fluid bg-slate-darken-50">
+	
+	<div class="row">
+		
+		<div id="sidebar" class="col-xs-12 col-md-6 bg-dark">
+			
+			<div class="row">
+				
+				<div class="col-xs-12 col-md-10 col-md-offset-2">
+				
+										
+					<div class="row">
+						
+						<div class="col-xs-10 col-xs-offset-1">
+							
+							<h3 class="text-center m-t-48"><strong>Resources You Might Like:</strong></h3>
+							<hr class="hr-solid hr-xl hr-width-xxs hr-padding-xs hr-white m-b-48" />
+							
+							<div class="col-xs-12"><a href="the-ultimate-devops-tool-chest/" target="_blank"><img src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/uploads/toolchest-resource.jpg" class="img-responsive" title="The Ultimate DevOps Tool Chest" alt="The Ultimate DevOps Tool Chest"/></a><br/></div><div class="col-xs-12"><a href="glossary/" target="_blank"><img src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/uploads/glossary-resource.jpg" class="img-responsive" title="The Complete DevOps Glossary" alt="The Complete DevOps Glossary"/></a><br/></div><div class="col-xs-12"><a href="devops-hot-or-not/" target="_blank"><img src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/uploads/hot-or-not-resource.jpg" class="img-responsive"  title="DevOps Hot or Not" alt="DevOps Hot or Not"/></a><br/></div><div class="col-xs-12"><a href="periodic-table-of-devops-tools/" target="_blank"><img src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/uploads/periodic-table-resource.jpg" class="img-responsive"  title="The Periodic Table of DevOps Tools" alt="The Periodic Table of DevOps Tools"/></a><br/></div>
+							
+							<p class="lead hidden">Before you comment, please keep in mind that <strong>this is meant to be a crude and limited representation of the discrete and perpetual processes that occur in the typical DevOps pipeline.</strong> This pipeline will NOT cater to everyone's varied perceptions of the perfect DevOps pipeline. Its mission is merely to add structure and educate people around the typical processes that occur in a DevOps enabled company.</p>
+							
+						</div>
+						
+					</div>
+				
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<div id="main-content" class="bg-slate-lighten-100 col-xs-12 col-md-6" style="min-height:1600px;">
+			
+			<div class="col-xs-12 col-md-8 col-md-offset-1">
+				
+				<h3 class="text-center m-t-48"><strong>Comment:</strong></h3>
+				<hr class="hr-solid hr-xl hr-width-xxs hr-padding-xs hr-slate m-b-48" />
+				
+				<div id="disqus_thread"></div>
+				<script type="text/javascript">
+				    /* * * CONFIGURATION VARIABLES * * */
+				    var disqus_shortname = 'xebialabs';
+				    var disqus_config = function () {
+				        this.page.url = 'https://xebialabs.com/devops-diagram-generator/';
+				        this.page.identifier = 'devops-diagram-generator';
+				        this.page.title = 'DevOps Diagram Generator';
+				    };
+				    /* * * DON'T EDIT BELOW THIS LINE * * */
+				    (function() {
+				        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				    })();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+							
+			</div>
+			
+		</div>
+		
+	</div>
+
+</section>
+
+<footer id="footer" class="color-slate">
+<section id="footer-top"><div class="container">
+<div class="row"><div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 text-center">
+<hr class="hr-width-sm hr-solid" />
+<p class="lead"><strong><span class="color-green">Xebia</span>Labs</strong> develops enterprise-scale Continuous Delivery and DevOps software, providing companies with the visibility, automation and control to deliver software faster and with less risk.</p>
+<hr class="hr-width-sm hr-solid" />
+</div>
+<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center">
+<div  class="footer-box">
+<h3><a href="https://xebialabs.com/company/" title="Company">Company</a></h3>
+<ul class="list-unstyled">
+<li><a href="https://xebialabs.com/company/about-us/">About Us</a></li><li><a href="https://xebialabs.com/company/careers/" class="tooltipit" title="We're Hiring!" data-placement="right">Careers</a></li>
+<li><a href="https://xebialabs.com/company/team/">Team</a></li><li><a href="https://xebialabs.com/company/press/">Press</a></li><li><a href="https://xebialabs.com/company/partners/">Partners</a></li><li><a href="https://xebialabs.com/media-kit/">Media Kit</a></li>	
+</ul>
+</div></div>
+<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center">
+<div  class="footer-box">
+<h3><a href="https://xebialabs.com/support/" title="Support">Support</a></h3>
+<ul class="list-unstyled">
+<li><a href="https://xebialabs.com/getting-started/">Getting Started</a></li><li><a href="https://xebialabs.com/community/documentation/">Documentation</a></li>
+<li><a href="https://xebialabs.com/support/">Support</a></li><li><a href="https://xebialabs.com/contact/">Contact Us</a></li>
+</ul>
+</div></div>
+<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 text-center">
+<div class="footer-box">
+<h3><a href="https://xebialabs.com/contact/" title="Company">Reach Out</a></h3>
+<p>We would love to hear from you.</p>
+<ul class="list-inline">
+<li><a href="https://xebialabs.com/demo/?reason=Schedule%20a%20Demo" class="btn btn-sm btn-primary">Schedule a Demo</a></li><li><a href="https://xebialabs.com/contact/" class="btn btn-sm btn-primary">Contact Us</a></li>
+</ul>
+<h3><a href="tel:1-866-656-4408" title="Company">Or call us</a></h3><p><strong>Phone:</strong>  <a href="tel:1-866-656-4408" title="Company">1-(866)-656-4408</a></p>
+</div></div></div></div>
+</section>
+<section id="footer-bottom">
+<div class="container"><div class="row">
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center-xs text-center-sm">
+<a href="https://xebialabs.com/"><img src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/media-kit/xebialabs-white.jpg" alt="XebiaLabs" style="height:30px;" /></a>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center-xs text-center-sm">
+<p>&copy; Copyright 2018. XebiaLabs, Inc. All rights reserved • <a href="https://xebialabs.com/privacy-policy/">Privacy Policy</a>  •  <a href="https://xebialabs.com/contact/">Contact</a></p>
+</div>
+</div></div></section>
+<div class="gear hidden-xs hidden-sm" style="width:400px; height:400px; left: -140px; bottom: -90px; opacity:.3"></div>
+</footer>
+
+<style id="ss360-default-css">img.unibox-vis{width:80px}.unibox-selectable{clear:both;position:relative;font-family:sans-serif;font-size:15px;text-align:left;display:block !important}.unibox-selectable .unibox-extra{cursor:default}.unibox-selectable:hover .unibox-extra{color:#fff}.unibox-selectable.active,.unibox-selectable:hover{background-color:#329fd9;color:#fff;cursor:pointer}.unibox-selectable.active a,.unibox-selectable.active span,.unibox-selectable.active .unibox-extra,.unibox-selectable:hover a,.unibox-selectable:hover span,.unibox-selectable:hover .unibox-extra{color:#fff}.unibox-selectable .unibox-selectable-img-container{width:60px;float:left;margin-right:6px}.unibox-selectable img{max-width:60px;max-height:60px}.unibox-selectable span span{font-weight:bold}.unibox-highlight{font-weight:bold;}p.unibox-result-content{margin-top:5px;margin-bottom:15px;}.unibox-ca{clear:both}#unibox-invisible{visibility:hidden;position:relative;text-align:left;height:0;display:none}#unibox-suggest-box{position:absolute;display:none;border:1px solid #e5e5e5;background-color:#fff;color:#333;overflow:hidden;z-index:1500}#unibox-suggest-box a{text-decoration:none;color:#329fd9}#unibox-suggest-box .unibox-selectable:hover a,#unibox-suggest-box .unibox-selectable.active a{color:#fff}#unibox-suggest-box>div>div{padding:6px 8px}#unibox-suggest-box h4{margin-left:8px;margin-top:6px;margin-bottom:6px;font-size:18px}.unibox-ivf{position:absolute}.unibox-ivf{width:76px;height:76px;position:absolute;top:-89px;left:-15px}.unibox-ivf img{max-width:76px;position:absolute;top:0;bottom:0;margin:auto;transition:.3s ease-out;-webkit-transition:.3s ease-out;-webkit-transform:rotateX(-90deg) translateY(100%);transform:rotateX(-90deg) translateY(100%)}.unibox-ivf img.l{-webkit-transform:rotateX(0) translateY(0);transform:rotateX(0) translateY(0)}#ss360-search-console>h2{text-align:center}#ss360-search-console{position:fixed;top:-100%;left:0;width:100%;height:100%;background-color:#f5f5f5;overflow:auto}#ss360-query:focus{border:2px solid #329fd9;outline:0}#ss360-query{display:block;padding:0 .4em 0 .4em;margin-left:auto;margin-right:auto;margin-bottom:2em;vertical-align:middle;border-radius:3px;min-width:50px;max-width:635px;width:100%;min-height:32px;background-color:#fff;border:2px solid #c9c9c9;color:#484848;font-size:24px;font-weight:300;height:54px;line-height:54px}#ss360-results{width:100%;max-width:1000px;margin-left:auto;margin-right:auto}#ss360-layer{padding:10px}#ss360-layer h4{background-color:#329fd9;padding:5px;color:white;font-size:20px}.ss360-layer-content h2{font-size:1.5em}.ss360-layer-content {position: relative;}#ss360-layer.ss360-overlay p{text-align:left}#ss360-layer.ss360-overlay{position:fixed;width:80%;padding:30px;padding-right:50px;background-color:#fff;color:#333;-webkit-box-shadow:0 0 5px 3px rgba(122,122,122,1);-moz-box-shadow:0 0 5px 3px rgba(122,122,122,1);box-shadow:0 0 5px 3px rgba(122,122,122,1);z-index:999999;left:calc(10% - 40px);top:calc(10% - 30px);height:80%;overflow:auto}.ss360-suggests{margin-bottom:25px;margin-top:5px}.ss360-suggests a{font-size:1.2em;}.ss360-content-container{margin-top:5px;}.ss360-content-container img{width:250px;float:left;margin-right:12px;margin-bottom:6px}.ss360-content-container table{width:auto;border:0}.ss360-content-container table tr,.ss360-content-container table tr td{border:0}.ss360-content-container table tr td:nth-of-type(1){font-weight:bold;padding-right:10px}.animated{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes bounceIn{0{opacity:0;-webkit-transform:scale(.3)}50%{opacity:1;-webkit-transform:scale(1.05)}70%{-webkit-transform:scale(.9)}100%{-webkit-transform:scale(1)}}@keyframes bounceIn{0{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1.05)}70%{transform:scale(.9)}100%{transform:scale(1)}}.bounceIn{-webkit-animation-name:bounceIn;animation-name:bounceIn}@-webkit-keyframes bounceOut{0{-webkit-transform:scale(1)}25%{-webkit-transform:scale(.95)}50%{opacity:1;-webkit-transform:scale(1.1)}100%{opacity:0;-webkit-transform:scale(.3)}}@keyframes bounceOut{0{transform:scale(1)}25%{transform:scale(.95)}50%{opacity:1;transform:scale(1.1)}100%{opacity:0;transform:scale(.3)}}.bounceOut{-webkit-animation-name:bounceOut;animation-name:bounceOut}@-webkit-keyframes fadeInDown{0{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@keyframes fadeInDown{0{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}#ss360-searchbox-spinner{width:100px;height:100px;position:fixed;left:49.5%;top:49.5%;z-index:999999;display:none}.ss360-double-bounce1,.ss360-double-bounce2{width:100%;height:100%;border-radius:50% !important;background-color:#329fd9;opacity:.6;position:absolute;top:0;left:0;-webkit-animation:sk-bounce 2.0 infinite ease-in-out;animation:sk-bounce 2.0 infinite ease-in-out}.ss360-double-bounce2{-webkit-animation-delay:-1.0;animation-delay:-1.0}@-webkit-keyframes sk-bounce{0,100%{-webkit-transform:scale(0.0)}50%{-webkit-transform:scale(1.0)}}@keyframes sk-bounce{0,100%{transform:scale(0.0);-webkit-transform:scale(0.0)}50%{transform:scale(1.0);-webkit-transform:scale(1.0)}}.ss360-layer-content>h2{margin-top:0}.ss360-top-nav{padding-bottom:10px}.ss360-left-nav{float:left;width:20%}.ss360-left-nav .ss360-nav-entry{margin-bottom:10px}.ss360-layer-content.ss360-left-nav{float:right;width:80%}.ss360-nav-entry:hover{border-bottom:3px solid #329fd9;padding-bottom:8px}.ss360-nav-entry{display:inline-block;padding:10px;background:#fff;color:#333;margin-right:5px;border:1px solid #329fd9;cursor:pointer}.ss360-result-count:after{content:")"}.ss360-result-count:before{content:"("}.ss360-result-count{margin-left:5px}.ss360-search-term-highlight{background-color:#b5f948;padding:0 3px}.ss360-highlight{font-weight:bold}.ss360-hidden{display:none}.ss360-more-results{border:1px solid #329fd9;color:#329fd9;font-weight:bold;padding:10px 20px;border-radius:12px;margin-bottom:25px;margin-left:auto;margin-right:auto;text-align:center;width:210px;cursor:pointer}#ss360Darken,#ss360Darken-input{background-color:rgba(0,0,0,.65) !important;width:100%;height:100%;position:fixed;top:0;left:0;cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAZlBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnJycoKCiCgoKEhITn5+f+/v7///9G9P8rAAAAIHRSTlMAAAQFBgcSExksREVMTU5kZWhpdHV2ent8fYCKi6ys6j3syEgAAAD9SURBVDjLldTrEoIgEAVgzVw1Ay+hxlJS7/+SGRW0KkbnDyPzjTJHIIoDEsXRz1C0L46VOJ9FdSz2HgS8R5uewwraHSSSyHI3R9DgIg1QlJ9wJaf8G4HA1QhwKGnQkzaxqERvyg8C6UcS3ojjRvgLpa7Dq3qNanStpgYVzty0UUrfrnayMIjZ54u+P5WahoudZAZVSBU1WBnUIVXUYGcQKWBSd61ICUukPKijRmuquvnC1Wfhar5wRo0dSAWuzNGVOc7K3P4tQxr+g7e3SvbPpouSNmD7Bh2EsCM1vWvliy0sjnn5+5hPyfjgyMAz79XDaiGlqJn36tm6xALyAPQXUwhUn4QTAAAAAElFTkSuQmCC") 12 12,auto;z-index:999998}#ss360CloseLayerButton{-webkit-transform-origin:center;transform-origin:center;cursor:pointer;position:absolute;top:8px;right:8px;width:36px;height:36px;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAZlBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnJycoKCiCgoKEhITn5+f+/v7///9G9P8rAAAAIHRSTlMAAAQFBgcSExksREVMTU5kZWhpdHV2ent8fYCKi6ys6j3syEgAAAD9SURBVDjLldTrEoIgEAVgzVw1Ay+hxlJS7/+SGRW0KkbnDyPzjTJHIIoDEsXRz1C0L46VOJ9FdSz2HgS8R5uewwraHSSSyHI3R9DgIg1QlJ9wJaf8G4HA1QhwKGnQkzaxqERvyg8C6UcS3ojjRvgLpa7Dq3qNanStpgYVzty0UUrfrnayMIjZ54u+P5WahoudZAZVSBU1WBnUIVXUYGcQKWBSd61ICUukPKijRmuquvnC1Wfhar5wRo0dSAWuzNGVOc7K3P4tQxr+g7e3SvbPpouSNmD7Bh2EsCM1vWvliy0sjnn5+5hPyfjgyMAz79XDaiGlqJn36tm6xALyAPQXUwhUn4QTAAAAAElFTkSuQmCC")}@keyframes rotate{0{transform:rotate(0)}50%{transform:rotate(180deg)}100%{transform:rotate(90deg)}}#ss360CloseLayerButton:hover{animation-duration:.5s;animation-name:rotate;animation-iteration-count:1}#ss360IndexFilters{display:none}.ss360-content-container>a,.ss360-content-container>a:hover{border:none;}@media all and (max-width:680px){.ss360-left-nav{float:left;width:100%;clear:both}.ss360-layer-content.ss360-left-nav{float:left;width:100%}#ss360-sorting-selection{display:none}#ss360-layer.ss360-overlay{position:fixed;width:100%;padding:10px 0 10px 10px;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;left:0;top:0;height:100%}}a.ss360-result-link{font-size:14px;color:#006621}</style>
+	
+<div id="popup-1" style="display:none; width:675px;max-width:100%">
+	<div class="row">
+		<div class="col-md-5 col-lg-5">
+			<a href="https://xebialabs.com/resources/analyst-reports/gartner-2017-magic-quadrant-application-release-automation/"><img class="img-responsive laz" src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/uploads/blank.jpg" data-src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/uploads/gartner-bg.png"></a>
+		</div>
+		<div class="col-md-7 col-lg-7">
+			<h3><a href="https://xebialabs.com/resources/analyst-reports/gartner-2017-magic-quadrant-application-release-automation/">Gartner 2017 Magic Quadrant: Application Release Automation</a></h3>
+			<p>XebiaLabs Named a Leader in the Gartner 2017 Magic Quadrant for Application Release Automation (ARA) for Second Year in a Row.</p>
+            <a href="https://xebialabs.com/resources/analyst-reports/gartner-2017-magic-quadrant-application-release-automation/" class="btn btn-green btn-lg btn-group-justified">View the Report</a>
+		</div>
+	</div>
+</div>
+<div id="popup-2" style="display:none; width:675px;max-width:100%">
+	<div class="row">
+		<div class="col-md-5 col-lg-5">
+			<a href="resources/whitepapers/the-it-managers-guide-to-continuous-delivery/"><img class="img-responsive laz" src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/uploads/blank.jpg" data-src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/whitepapers/xebialabs-th-IT-Managers-guide-to-continuous-delivery.png"></a>
+		</div>
+		<div class="col-md-7 col-lg-7">
+			<h3><a href="resources/whitepapers/the-it-managers-guide-to-continuous-delivery/">The IT Manager's Guide to Continuous Delivery</a></h3>
+			<p>This new ebook helps managers understand the principles behind Continuous Delivery, explains the transition to a Continuous Delivery organization and gives practical advice on how to start benefiting from the dramatic improvements Continuous Delivery provides.</p>
+            <a href="https://xebialabs.com/resources/whitepapers/the-it-managers-guide-to-continuous-delivery/" class="btn btn-green btn-lg btn-group-justified">Get the eBook</a>
+		</div>
+	</div>
+</div>
+<div id="popup-3" style="display:none; width:675px;max-width:100%">	
+	<div class="row">
+		<div class="col-md-5 col-lg-5">
+			<a href="https://xebialabs.com/resources/whitepapers/enterprise-software-delivery-in-the-age-of-docker-and-other-containers/"><img class="img-responsive img-thumbnail laz" src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/uploads/blank.jpg" data-src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/files/whitepapers/docker-whitepaper-web.jpg"></a>
+		</div>
+		<div class="col-md-7 col-lg-7">
+			<h3><a href="https://xebialabs.com/resources/whitepapers/enterprise-software-delivery-in-the-age-of-docker-and-other-containers/">Enterprise Software Delivery in the Age of Docker and Other Containers</a></h3>
+            <p>Most of today’s forward-thinking companies are investigating container technology as a potentially better way to deliver software. Containers let developers bundle all of the necessary components of an application into one package that can easily be shared and distributed, which can greatly simplify deployment to test, user acceptance and production environments.</p>
+            <a href="https://xebialabs.com/resources/whitepapers/enterprise-software-delivery-in-the-age-of-docker-and-other-containers/" class="btn btn-green btn-lg btn-group-justified">Read the Whitepaper</a>
+		</div>
+	</div>	
+</div>
+    
+	<script defer>
+	    var lz = document.getElementsByClassName("laz");for(var i=0;i<lz.length;i++){var img=lz[i].getAttribute("data-src");lz[i].setAttribute("src",img);}
+	    var hero = document.getElementsByClassName("laz-hero");for(var i=0;i<hero.length;i++){var img=hero[i].getAttribute("data-src");hero[i].style.backgroundImage="url('"+img+"')";}
+	</script>
+	
+	<script type="text/javascript" src="https://xebialabs-clients-iglusjax.stackpathdns.com/assets/components/minifyx/cache/scripts_6cc6fc04e4.min.js"></script>
+	
+	<script type="text/javascript" defer>
+    	$(function() {
+        // CHECK IF THE PERSON IS VIEWING THE DEVOPS MATURITY QUIZ
+        if(window.location.href.indexOf("devops-maturity-quiz") > -1 ) { } else { 
+    		// CHECK IF THE WINDOW IS LARGE TO ACCOMMODATE THE POPUP
+    		if ($(window).width() > 992) {
+    			if ($.cookie('popup1') != 'viewed') {
+    				setTimeout(function() { 
+    					$.fancybox.open($('#popup-open-1'), { 'afterClose': function() { $.cookie('popup1', 'viewed', { expires: 30, path: '/', domain: 'xebialabs.com' }); } } );
+    					$.fancybox.open($('#popup-open-1'), { 'afterClose': function() { $.cookie('popup1', 'viewed', { expires: 30, path: '/', domain: 'blog.xebialabs.com' }); } } );
+    				}, 90000);
+    			}
+    			if ($.cookie('popup2') != 'viewed') {
+    				setTimeout(function() { 
+    					$.fancybox.open($('#popup-open-2'), { 'afterClose': function() { $.cookie('popup2', 'viewed', { expires: 30, path: '/', domain: 'xebialabs.com'  }); } } );
+    					$.fancybox.open($('#popup-open-2'), { 'afterClose': function() { $.cookie('popup2', 'viewed', { expires: 30, path: '/', domain: 'blog.xebialabs.com'  }); } } );
+    				}, 600000);
+    			}
+    		}
+        }
+    	});
+    </script>
+
+<script>
+   // create a settings object
+    var ss360Config = {
+        // your site id
+        siteId: 'www.xebialabs.com',
+        // a CSS selector that points to your search  box
+        searchBoxSelector: '#searchBox',  
+        // the text to show before the search results
+        searchResultsCaption: 'Search results for "#QUERY#"',
+        // speed of the animations, default: 300ms
+        animationSpeed: 300,
+        // placeholder
+        placeholder: 'search',
+        // minimum number of characters before the suggests shows, default: 3
+        minChars: 3,
+        // whether to show images in search suggestions
+        showImagesSuggestions: false, 
+        // whether to show images in search results
+        showImagesResults: false,
+        // the maximum number of search suggests to be shown [1, 25]
+        numSuggestions: 5,
+        // the maximum number of search results to be shown [1,1000]
+        numResults: 50,
+        // if you want the default CSS styling
+        defaultCss: true,
+        // navigation "top", "left", or "none"
+        navigation: 'top',        
+        // whether to show implementation errors, set to false for production
+        showErrors: false
+   };
+</script>
+<script src="https://sitesearch360.com/cdn/sitesearch360-v7.min.js"></script>
+
+<style id="ss360-default-css">
+    #searchBox{
+        width: 200px;
+        height: 20px;
+        padding: 5px;
+        border: 1px solid #e2e2e2;
+    }
+    
+</style>
+
+<script type="text/javascript"> _linkedin_data_partner_id = "112917"; </script>
+<script type="text/javascript"> 
+    (function(){
+        var s = document.getElementsByTagName("script")[0]; 
+        var b = document.createElement("script"); 
+        b.type = "text/javascript";
+        b.async = true; 
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; 
+        s.parentNode.insertBefore(b, s);
+        })(); 
+</script> 
+<noscript> 
+    <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=112917&fmt=gif" /> 
+</noscript>
+
+<script type="text/javascript" defer>
+
+MktoForms2.loadForm("//app-abk.marketo.com", "404-ZJQ-295", 554, function(form) {
+	
+	// POPULATE FIELDS
+	form.vals({
+		'utm_campaign__c':'general', 
+		'utm_medium__c':'web', 
+		'utm_source__c':'www.google.com',		
+		'utm_content__c':'NULL',
+		'utm_term__c':'NULL',  
+		'modxID':'96900910',
+		'modxTitle':'DevOps Diagram Generator', 
+		'modxURL':'https://xebialabs.com/devops-diagram-generator/',
+		'modxImage':'/assets/files/uploads/devops-diagram-generator.jpg',
+		'modxLink':'',
+		'modxDescription':'',
+		'modxType':'Interactive',
+		'FirstName': '',
+		'LastName':'',
+		'Email':'',
+		'Phone':'',
+		'Title':'',
+		'Industry':'',
+		'Company':'',
+		'Country':'',
+		'State':'',
+		'contactReason':'',
+		'message':'',
+	});
+	
+	// DO ANOTHER CHECK ON THE TRACKING
+	/*var vals = form.vals();      
+	if (vals.utm_source__c == "" || vals.utm_medium__c == "") {
+		form.vals({"utm_source__c":"unknown", "utm_medium__c":"web"});      
+	}*/
+	
+	$('#mktoForm_554 .mktoButton').text('Visualize My Pipeline!');
+	
+	
+	
+});	
+</script>
+
+<script type="text/javascript">
+    /*
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
+    if(getUrlParameter('conversion_lable')==''){
+        console.log('there was no URL parameter');
+    }
+    else{
+        console.log(getUrlParameter('conversion_lable'));
+    }
+    */
+    /* <![CDATA[ */
+	goog_snippet_vars = function() {
+		var w = window;
+		/*w.google_conversion_id = 1036092353;
+		w.google_conversion_label = "WQpeCJew01sQwYeG7gM";
+		w.google_remarketing_only = false;*/
+        
+                w.google_conversion_id =        1036092353;
+		w.google_conversion_language =  "en";
+		w.google_conversion_format =    3;
+		w.google_conversion_color =     "ffffff";
+		w.google_conversion_label =     "WQpeCJew01sQwYeG7gM";
+		w.google_remarketing_only =     false;
+	}
+	// DO NOT CHANGE THE CODE BELOW.
+	goog_report_conversion = function(url) {
+		goog_snippet_vars();
+		window.google_conversion_format = "3";
+		var opt = new Object();
+		opt.onload_callback = function() {
+		if (typeof(url) != 'undefined') {
+		  window.location = url;
+		}
+    }
+	var conv_handler = window['google_trackConversion'];
+	    if (typeof(conv_handler) == 'function') {
+		    conv_handler(opt);
+	    }
+	}
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
